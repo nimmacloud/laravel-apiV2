@@ -146,9 +146,8 @@ class NimmacloudApi {
             return json_decode($res->getBody()->getContents(), true);
 
         } catch (\Exception $ex) {
-            report($ex);
             //abort($ex->getCode(),$ex->getMessage());
-            //\Log::error($ex);
+            \Log::error($ex);
         }
     }
 }
