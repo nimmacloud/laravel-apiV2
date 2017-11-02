@@ -109,7 +109,7 @@ class NimmacloudApi {
     protected function sendRequest($controller, $request, $params) {
         // 1.1 Init Guzzle.
         $client = new GuzzleHttp\Client();
-        $open = config('mainpixelApi.url') . $this->path;
+        $open = 'https://nimma.cloud/api/v1/' . $this->path;
 
 
         // 1.2 Do a request into given URL.
@@ -119,9 +119,9 @@ class NimmacloudApi {
                 $job = [
                     'verify' => false,
                     'headers' => [
-                        'token'    => config('mainpixelApi.token'),
-                        'profile'  => config('mainpixelApi.profile'),
-                        'user-id'  => config('mainpixelApi.user_id'),
+                        'token'    => config('nimmacloud.token'),
+                        'profile'  => config('nimmacloud.profile'),
+                        'user-id'  => config('nimmacloud.user_id'),
                         'language' => app()->getLocale(),
                     ],
                     'query'   => $params,
@@ -132,9 +132,9 @@ class NimmacloudApi {
                     'verify' => false,
                     'headers' => [
                         
-                        'token'    => config('mainpixelApi.token'),
-                        'profile'  => config('mainpixelApi.profile'),
-                        'user-id'  => config('mainpixelApi.user_id'),
+                        'token'    => config('nimmacloud.token'),
+                        'profile'  => config('nimmacloud.profile'),
+                        'user-id'  => config('nimmacloud.user_id'),
                         'language' => app()->getLocale(),
                     ],
                     'form_params' => $params,

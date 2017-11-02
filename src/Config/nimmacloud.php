@@ -12,7 +12,6 @@ return [
      * Please check documentation for a how-to.
      */
 
-    'url'   => 'YOUR-NODE-DOMAIN/api/v1/',
     'token' => 'YOUR-ACCESS-TOKEN',
     'profile' => 'YOUR-PROFILE-ID',
     'user_id' => 'UNIQUE-USER-ID (optional)',
