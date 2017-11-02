@@ -109,7 +109,7 @@ class NimmacloudApi {
     protected function sendRequest($controller, $request, $params) {
         // 1.1 Init Guzzle.
         $client = new GuzzleHttp\Client();
-        $open = 'https://nimma.cloud/api/v1/' . $this->path;
+        $open = (config('nimmacloud.url') == null ? 'https://nimma.cloud/api/v1/' : config('nimmacloud.url')) . $this->path;
 
 
         // 1.2 Do a request into given URL.
