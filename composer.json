@@ -1,0 +1,29 @@
+{
+    "name": "nimmacloud/laravel-api",
+    "description": "Connect all NimmaCloud apps with your own application based on Laravel 5.* or higher",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Jasper Berkhout",
+            "email": "jasper@mainpixel.io",
+            "homepage": "https://www.mainpixel.io",
+            "role": "Owner-/Developer"
+        }
+    ],
+    "support": {
+        "email": "support@mainpixel.io"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.2",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "classmap": [
+            
+        ],
+        "psr-4" : {
+            "Nimmacloud\\Api\\" : "src/"
+        }
+    }
+}
