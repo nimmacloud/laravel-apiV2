@@ -7,11 +7,10 @@
  ******************************************************************************/
 namespace Nimmacloud\Api\Types\Ecommerce;
 use Nimmacloud\Api\NimmacloudApi;
-class Carts extends NimmacloudApi{
-	protected $path = 'ecommerce/carts';
+class Categories extends NimmacloudApi{
+	protected $path = 'ecommerce/categories';
 	protected $allowed = [
-		'add',
-		'edit',
 		'show',
+		'list',
 	];
 }
