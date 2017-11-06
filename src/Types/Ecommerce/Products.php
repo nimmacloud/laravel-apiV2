@@ -10,6 +10,7 @@ use Nimmacloud\Api\NimmacloudApi;
 class Products extends NimmacloudApi{
 	protected $path = 'ecommerce/products';
 	protected $allowed = [
+		'list',
 		'show',
 	];
 }
